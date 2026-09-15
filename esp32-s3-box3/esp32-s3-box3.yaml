@@ -256,6 +256,7 @@ micro_wake_word:
                       - media_player.speaker.play_on_device_media_file:
                           media_file: wake_word_triggered_sound
                           announcement: true
+                      - delay: 100ms
                       - voice_assistant.start:
                           wake_word: !lambda return wake_word;
 
